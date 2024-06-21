@@ -6,8 +6,10 @@ import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
 window.onload = function() {
+  // Función para generar una excusa aleatoria
   //write your code here
   function generarExcusa() {
+    // Listas de opciones para construir la excusa
     var who = ["The dog", "My grandma", "The mailman", "My bird"];
     var action = ["ate", "peed", "crushed", "broke"];
     var what = ["my homework", "my phone", "the car"];
@@ -25,7 +27,7 @@ window.onload = function() {
     var momento = when[Math.floor(Math.random() * when.length)];
 
     var excuse = `${persona} ${accion} ${objeto} ${momento}.`;
-
+    // Mostrar la excusa en el elemento HTML con id "excuse"
     var textescuse = document.getElementById("excuse");
     textescuse.innerText = excuse;
     console.dir(textescuse);
